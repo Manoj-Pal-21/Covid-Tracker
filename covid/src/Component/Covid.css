@@ -7,3 +7,22 @@ ul {
     list-style: none;
     display: flex;
 }   
+
+.head-c {
+    color: red;
+
+}
+
+.T  {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.card__name {
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.card__total {
+    font-weight: bold;
+}

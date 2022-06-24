@@ -12,7 +12,7 @@ const Covid = () => {
             // console.log(res);
             const data = await res.json();
             // console.log(data.statewise[0]);
-            setData(data.statewise[0])
+            setData(data.statewise[1])
         } catch (err) {
             console.log(err);
         }
@@ -27,13 +27,13 @@ const Covid = () => {
             <section>
 
                 <h1> 🔴 LIVE </h1>
-                <h2> COVID-19 CORONAVIRUS TRACKER </h2>
+                <h2> <span className='head-c'>COVID</span>-19 CORONAVIRUS TRACKER </h2>
 
                 <ul>
                     <li className='card'>
                         <div className='card__main'>
                             <div className='card__inner'>
-                                <p className='card__name'><span> OUR </span> STATE CODE </p>
+                                <p className='card__name'><span className='head-c T'> TOTAL </span> STATE CODE </p>
                                 <p className='card__total card__small'>{data.statecode}</p>
                             </div>
                         </div>
@@ -44,7 +44,7 @@ const Covid = () => {
                     <li className='card'>
                         <div className='card__main'>
                             <div className='card__inner'>
-                                <p className='card__name'><span> OUR </span> RECOVERED </p>
+                                <p className='card__name'><span className='head-c T'> TOTAL </span> RECOVERED </p>
                                 <p className='card__total card__small'>{data.recovered}</p>
                             </div>
                         </div>
@@ -55,7 +55,7 @@ const Covid = () => {
                     <li className='card'>
                         <div className='card__main'>
                             <div className='card__inner'>
-                                <p className='card__name'><span> OUR </span> CONFIRMED </p>
+                                <p className='card__name'><span className='head-c T'> TOTAL </span> CONFIRMED </p>
                                 <p className='card__total card__small'>{data.confirmed}</p>
                             </div>
                         </div>
@@ -66,7 +66,7 @@ const Covid = () => {
                     <li className='card'>
                         <div className='card__main'>
                             <div className='card__inner'>
-                                <p className='card__name'><span> OUR </span> ACTIVE </p>
+                                <p className='card__name'><span className='head-c T'> TOTAL </span> ACTIVE </p>
                                 <p className='card__total card__small'>{data.active}</p>
                             </div>
                         </div>
@@ -77,7 +77,7 @@ const Covid = () => {
                     <li className='card'>
                         <div className='card__main'>
                             <div className='card__inner'>
-                                <p className='card__name'><span> OUR </span> DEATHS </p>
+                                <p className='card__name'><span className='head-c T'> TOTAL </span> DEATHS </p>
                                 <p className='card__total card__small'>{data.deaths}</p>
                             </div>
                         </div>
@@ -88,7 +88,7 @@ const Covid = () => {
                     <li className='card'>
                         <div className='card__main'>
                             <div className='card__inner'>
-                                <p className='card__name'><span> OUR </span> LAST UPDATED TIME </p>
+                                <p className='card__name'><span className='head-c T'> LAST </span> UPDATED TIME </p>
                                 <p className='card__total card__small'>{data.lastupdatedtime}</p>
                             </div>
                         </div>
